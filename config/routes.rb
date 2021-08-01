@@ -19,5 +19,7 @@ Rails.application.routes.draw do
   end
 
   resources :chats, only: [:create]
-  resources :groups
+  resources :groups do
+    get "join" => "groups#join"
+  end
 end
