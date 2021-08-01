@@ -19,4 +19,5 @@ Rails.application.routes.draw do
   end
 
   resources :chats, only: [:create]
+  resources :groups
 end
